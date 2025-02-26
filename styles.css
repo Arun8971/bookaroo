@@ -1,0 +1,341 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    user-select: none;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+  }
+  
+  .logo{
+    width: 5rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6f61;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: #ff6f61;
+  }
+  
+  header .dark-mode-toggle button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  /* Mobile Menu Toggle */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 4px 0;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 10rem 0 6rem;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content h1 span {
+    color: #ff6f61;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-btn {
+    background: #ff6f61;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .cta-btn:hover {
+    background: #ff4a3d;
+    transform: translateY(-5px);
+  }
+  
+  .buy-me-coffee {
+    margin-top: 2rem;
+  }
+  
+  .coffee-btn {
+    background: #ffdd57;
+    color: #000;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.3s;
+  }
+  
+  .coffee-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Download Section */
+  .download {
+    padding: 6rem 0;
+    text-align: center;
+  }
+  
+  .download h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .ebook-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+    min-height: 400px; /* Set a minimum height for the grid */
+    justify-items: center; /* Ensure items are centered */
+    align-items: start; /* Align items to the top when few items are present */
+  }
+  
+  .ebook-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .ebook-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ebook-thumbnail {
+    background: #ddd;
+    height: 200px;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+  }
+  
+  .ebook-thumbnail img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .ebook-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .ebook-card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+  }
+  
+  .download-btn {
+    background: #6a11cb;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .download-btn:hover {
+    background: #2575fc;
+    transform: translateY(-5px);
+  }
+  
+  /* Social Media Section */
+  .social-media {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .social-media h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #ff6f61;
+    transform: scale(1.2);
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .footer-links {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #ff6f61;
+  }
+  
+  .copyright {
+    font-size: 0.9rem;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background: #121212;
+    color: #fff;
+  }
+  
+  body.dark-mode header {
+    background: rgba(0, 0, 0, 0.9);
+  }
+  
+  body.dark-mode .ebook-card {
+    background: #1e1e1e;
+    color: #fff;
+  }
+  
+  body.dark-mode .ebook-card h3,
+  body.dark-mode .ebook-card p {
+    color: #fff;
+  }
+  
+  body.dark-mode .social-media {
+    background: linear-gradient(135deg, #1e1e1e, #333);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header nav {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    header nav.active {
+      display: flex;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .menu-toggle.active .bar:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    .menu-toggle.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-toggle.active .bar:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
