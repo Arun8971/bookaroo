@@ -124,7 +124,34 @@ body {
   }
   
 
-  
+  /* Styling the "Coming Soon" message */
+.coming_soon {
+  text-align: center;
+  margin-top: 30px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.coming_soon p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.coming_soon:hover {
+  background-color: #e0e0e0; /* Lighten background on hover */
+  transform: translateY(-5px); /* Slight elevation on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.coming_soon:active {
+  transform: translateY(0); /* Reset the hover effect on click */
+}
+
   
   
   /* Social Media Section */
