@@ -51,21 +51,6 @@ body {
     cursor: pointer;
   }
   
-  /* Mobile Menu Toggle */
-  .menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-  }
-  
-  .menu-toggle .bar {
-    width: 25px;
-    height: 3px;
-    background: #fff;
-    margin: 4px 0;
-    transition: transform 0.3s, opacity 0.3s;
-  }
-  
   /* Hero Section */
   .hero {
     background: linear-gradient(135deg, #6a11cb, #2575fc);
